@@ -67,8 +67,6 @@ angular.module('mobionicApp', ['ionic', 'mobionicApp.controllers', 'mobionicApp.
         notificationOpenedCallback);
 
   });
-    window.plugins.OneSignal.setSubscription(true);
-    window.plugins.OneSignal.enableNotificationWhenActive(true);
 
 })
 
