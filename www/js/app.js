@@ -52,21 +52,6 @@ angular.module('mobionicApp', ['ionic', 'mobionicApp.controllers', 'mobionicApp.
         // Enable to debug issues:
         // window["plugins"].OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
 
-    var notificationOpenedCallback = function (jsonData) {
-        alert("Notification received");
-    };
-        /*
-                window["plugins"].OneSignal
-                  .startInit("f726f088-5d47-42e1-bf68-6c293302ecb3", "867553565277")
-                  .handleNotificationOpened(notificationOpenedCallback)
-                  .endInit();
-                  */
-
-    window.plugins.OneSignal.init("f726f088-5d47-42e1-bf68-6c293302ecb3",
-        { googleProjectNumber: '867553565277' },
-        notificationOpenedCallback);
-
-  });
 
 })
 
